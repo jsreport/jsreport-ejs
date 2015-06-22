@@ -1,0 +1,31 @@
+{
+  "name": "jsreport-ejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "jsreport.config.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "jsreport",
+    "ejs"
+  ],
+  "homepage": "https://github.com/jsreport/jsreport-ejs",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsreport/jsreport-ejs.git"
+  },
+  "author":{
+    "name": "Jan Blaha",
+    "email": "jan.blaha@hotmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "node.extend": "^1.1.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.1"
+  }
+}
