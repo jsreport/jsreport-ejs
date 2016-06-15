@@ -1,31 +1,55 @@
 {
   "name": "jsreport-ejs",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "",
   "main": "jsreport.config.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test",
+    "build": "jsreport-studio-build",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
   },
   "keywords": [
     "jsreport",
     "ejs"
   ],
+  "standard": {
+    "ignore": [
+      "main.js"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
   "homepage": "https://github.com/jsreport/jsreport-ejs",
   "repository": {
     "type": "git",
     "url": "git@github.com:jsreport/jsreport-ejs.git"
   },
-  "author":{
+  "author": {
     "name": "Jan Blaha",
     "email": "jan.blaha@hotmail.com"
   },
   "license": "MIT",
   "dependencies": {
-    "ejs": "^2.3.1",
-    "node.extend": "^1.1.5"
+    "ejs": "2.4.2",
+    "in-publish": "2.0.0",
+    "node.extend": "1.1.5"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^7.0.1"
-  }
+    "babel-eslint": "6.0.4",
+    "brace": "0.8.0",
+    "eslint": "2.12.0",
+    "eslint-config-standard-jsx": "1.2.1",
+    "eslint-plugin-babel": "3.2.0",
+    "jsreport-studio-dev": "0.3.0",
+    "mocha": "2.5.3",
+    "should": "9.0.2",
+    "standard": "7.1.2"
+  },
+  "files": [
+    "lib", "index.js", "jsreport.config.js", "studio"
+  ]
 }
