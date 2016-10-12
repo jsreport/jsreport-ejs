@@ -1,4 +1,4 @@
-var main = require('./lib/engine.js')
+var main = require('./lib/ejs.js')
 var config = require('./jsreport.config.js')
 
 module.exports = function (options) {

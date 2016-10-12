@@ -1,5 +1,5 @@
 var should = require('should')
-var ejs = require('../lib/engine')
+var ejs = require('../lib/ejsEngine')
 
 describe('ejs', function () {
   it('should render html', function () {
