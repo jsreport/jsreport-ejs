@@ -2,7 +2,7 @@
   "name": "jsreport-ejs",
   "version": "1.0.2",
   "description": "",
-  "main": "jsreport.config.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha test",
     "build": "jsreport-studio-build",
